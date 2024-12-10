@@ -35,7 +35,7 @@
      <h2>To Buy:</h2>
      <ul>
        {{ tobuy.toBuyItems.length }}
-       <li ng-repeat="item in tobuy.items">Buy {{ item.quantity }} {{ item.name }}<button class="btn btn-default" ng-click="tobuy.buyItem($index)"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+       <li ng-repeat="item in tobuy.items">Buy {{ item.quantity }} {{ item.name }}<button class="btn btn-primary" ng-click="tobuy.buyItem($index)"><span class="glyphicon"></span>Buy</button></li>
      </ul>
      <div class="emptyMessage" ng-if="!tobuy.items.length">Everything is bought!</div>
     </div>
